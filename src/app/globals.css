@@ -1,6 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
 @import "tailwindcss";
 
+@theme {
+  --color-elwood: #475b50;
+  --color-elgrass: #91aa92;
+  --color-elblack: #132123;
+  --color-elsea: #365155;
+  --color-elrust: #75201d;
+  --color-elwhite: #cbcbcb;
+
+  --font-elmain: "Orbitron";
+
+  --text-elh1: 32px;
+  --text-elh2: 24px;
+  --text-elh3: 20px;
+  --text-elh4: 18px;
+  --text-elbodyl: 18px;
+  --text-elbodym: 16px;
+  --text-elbodys: 14px;
+}
 
 * {
   box-sizing: border-box;
