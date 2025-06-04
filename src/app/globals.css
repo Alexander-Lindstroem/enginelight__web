@@ -18,6 +18,8 @@
   --text-elbodyl: 18px;
   --text-elbodym: 16px;
   --text-elbodys: 14px;
+
+  --red-shadow: 0 2px 2px var(--color-elrust);
 }
 
 * {
