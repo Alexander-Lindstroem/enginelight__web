@@ -5,10 +5,10 @@ const DescriptionContent = () => {
   return (
     <div className="w-full bg-black text-white">
       <div className="max-w-6xl w-4/5 mx-auto py-8">
-        <div className="flex flex-col gap-5" style={{fontFamily: "var(--font-elmain)"}}>
+        <div className="flex flex-col gap-5 font-elmain">
           <div className="flex flex-col gap-2 border-white border md:w-1/2 w-full p-2" >
-            <h2 style={{fontSize: "var(--text-elh2)", fontWeight: 700}}>"A Swedish Mad Max"</h2>
-            <h2 style={{fontWeight: 600}}>FPS</h2>
+            <h2 className="text-elh2 font-bold">"A Swedish Mad Max"</h2>
+            <h2 className="font-medium">FPS</h2>
             <div>
               <p>Genres: Combat & Survival</p>
               <p>Art style: Low-Poly Stylization</p>
@@ -18,7 +18,7 @@ const DescriptionContent = () => {
           </div>
 
           <div className="flex flex-col gap-2 border-white border md:w-1/2 w-full self-end p-2">
-            <h2 style={{fontSize: "var(--text-elh2)", fontWeight: 700}}>Story</h2>
+            <h2 className="text-elh2 font-bold">Story</h2>
             <p>The year is 2325, Summer, Sweden.</p>
             <p>
               The world is in ruins after the advancement of AI and Robotics plunged
