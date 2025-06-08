@@ -1,6 +1,8 @@
+import TonePage from "@/components/TonePage";
+
 const Home = () => {
   return (
-    <div>home</div>
+    <TonePage />
   );
 }
 
