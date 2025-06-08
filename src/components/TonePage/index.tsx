@@ -24,7 +24,7 @@ export default function TonePage() {
         src={props.gameplayimage}
         alt={`${props.title} Background`}
         fill
-        className="object-cover object-center"
+        className="object-cover object-left lg:object-center md:object-left sm:object left"
         quality={100}
 
         priority
