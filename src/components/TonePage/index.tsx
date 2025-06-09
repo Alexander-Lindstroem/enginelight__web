@@ -33,7 +33,7 @@ export default function TonePage() {
       <div className="absolute inset-0 bg-opacity-60 z-10" />
       {/* Content */}
       <div className="absolute z-20 top-[32%] font-elmain">
-        <div className="ml-4 sm:ml-10 md:ml-32 lg:ml-[44rem] max-w-xl text-left text-white space-y-5 tracking-wider px-4 sm:px-0">
+        <div className="ml-4 sm:ml-10 md:ml-32 lg:ml-[44rem] max-w-xl text-left text-[var(--color-elwhite)] space-y-5 tracking-wider px-4 sm:px-0">
           <h2 className="text-elh1 font-bold">{props.title}</h2>
           <p className="text-elbodym leading-8 mb-0">
             {props.paragraph1}
