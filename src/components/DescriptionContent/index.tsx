@@ -3,7 +3,7 @@ import NewsBtn from "../NewsBtn";
 
 const DescriptionContent = () => {
   return (
-    <div className="w-full bg-black text-white">
+    <div className="w-full bg-cover bg-center bg-no-repeat text-white" style={{ backgroundImage: "url('/background-vector.png')" }}>
       <div className="max-w-6xl w-4/5 mx-auto py-8">
         <div className="flex flex-col gap-5 font-elmain">
           <div className="flex flex-col gap-2 border-white border md:w-1/2 w-full p-2" >
