@@ -1,6 +1,8 @@
+import TonePage from "@/components/TonePage"
+
 const Gameplay = () => {
     return (
-        <div>gameplay</div>
+        <TonePage/>
     )
 }
 
