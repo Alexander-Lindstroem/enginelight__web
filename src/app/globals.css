@@ -18,6 +18,9 @@
   --text-elbodyl: 18px;
   --text-elbodym: 16px;
   --text-elbodys: 14px;
+
+
+  --breakpoint-xs: 400px;
 }
 
 * {
