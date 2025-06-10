@@ -1,6 +1,10 @@
+import DescriptionContent from "@/components/DescriptionContent";
+
 const Home = () => {
   return (
-    <div>home</div>
+    <>
+      <DescriptionContent/>
+    </>
   );
 }
 
