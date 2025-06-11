@@ -21,6 +21,7 @@
 
 
   --breakpoint-xs: 400px;
+  --breakpoint-largescreen: 1500px;
 }
 
 * {
