@@ -10,7 +10,7 @@ const DescriptionContent = () => {
           <div className="flex flex-col gap-2 border-white border md:w-1/2 w-full p-2">
             <h2 className="md:text-elh2 text-elh4 font-bold">"A Swedish Mad Max"</h2>
             <h2 className="font-medium">FPS</h2>
-            <div className="text-elbodys">
+            <div className="text-elbodys md:text-elbodyl">
               <p>Genres: Combat & Survival</p>
               <p>Art style: Low-Poly Stylization</p>
               <p>Setting: Desolate Northern Sweden</p>
@@ -20,7 +20,7 @@ const DescriptionContent = () => {
 
           <div className="flex flex-col gap-2 border-white border md:w-1/2 w-full self-end p-2">
             <h2 className="md:text-elh2 text-elh4 font-bold">Story</h2>
-            <div className="text-elbodys">
+            <div className="text-elbodys md:text-elbodyl">
               <p>The year is 2325, Summer, Sweden.</p>
               <p>
                 The world is in ruins after the advancement of AI and Robotics plunged
