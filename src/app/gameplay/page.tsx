@@ -1,7 +1,6 @@
 import TonePage from "@/components/TonePage"
 import VideoContainer from "@/components/videocontainer";
 
-
 const Gameplay = () => {
     return (
         <>
