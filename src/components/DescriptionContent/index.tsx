@@ -3,7 +3,7 @@ import NewsBtn from "../NewsBtn";
 
 const DescriptionContent = () => {
   return (
-    <div className="w-full h-full bg-cover bg-center bg-no-repeat text-elwhite bg-[url('/background-vector.png')]">
+    <div className="w-full min-h-[100vh] bg-cover bg-center bg-no-repeat text-elwhite bg-[url('/background-vector.png')]">
       <div className="h-full max-w-6xl w-4/5 mx-auto py-8">
         <div className="h-full flex flex-col gap-5 font-elmain justify-center">
           <div className="grow-1"></div>
