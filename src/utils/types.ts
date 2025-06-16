@@ -7,6 +7,6 @@ export type TeamMember = {
 
 
 export type TeamCategory ={
-    category: string,
-    members: TeamMember[];
+    category:string,
+    members:TeamMember[];
 } 
