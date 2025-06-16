@@ -1,6 +1,10 @@
+import VideoContainer from "@/components/videocontainer";
+
 const Gameplay = () => {
     return (
-        <div>gameplay</div>
+        <>
+        <VideoContainer video_link="/GP3_Team2_video.mp4" />
+        </>
     )
 }
 
