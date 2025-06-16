@@ -1,6 +1,10 @@
+import CrewTeam from "@/components/CrewTeam"
+
 const AboutUs = () => {
     return (
-        <div>about us</div>
+        <>
+        <CrewTeam />
+        </>
     )
 }
 
