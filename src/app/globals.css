@@ -20,6 +20,9 @@
   --text-elbodys: 14px;
 
   --red-shadow: 0 2px 2px var(--color-elrust);
+
+  --breakpoint-xs: 400px;
+  --breakpoint-largescreen: 1500px;
 }
 
 * {
