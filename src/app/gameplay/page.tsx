@@ -4,8 +4,9 @@ import VideoContainer from "@/components/videocontainer";
 const Gameplay = () => {
     return (
         <>
-        <Gameplay_world />
         <VideoContainer video_link="/GP3_Team2_video.mp4" />
+        <Gameplay_world />
+        
         </>
     )
 }
