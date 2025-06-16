@@ -94,7 +94,7 @@ export const TeamMembers: TeamCategory[] = [
       {
         name: "Indra Cosimo Bowen-Paoli",
         title: "Game Programmer",
-        image: "/indra_cosimo_bowen-paoli.jpg",
+        image: "/indra_cosimo_bowen_paoli.jpg",
         linkedin: "https://linkedin.com/"
       },
       {

@@ -1,18 +1,18 @@
 import { TeamMembers } from "@/utils/data";
 import { TeamCategory } from "@/utils/types";
 
+import Image from "next/image";
+
 const CrewTeam = () => {
     return (
         <>
-            <div className=" py-12 space-y-8 bg-black font-elmain text-white">
+            <div className="relative py-12 space-y-8 bg-black font-elmain text-white">
+                <div className="mb-50">
                 <h2 className="text-center p-6 text-xl">Get to know your team</h2>
+                <Image  className="absolute left-[0] tr top-[5%]" src="/el_vec_l.png" alt="vector_left_image" width={400} height={400} />
+                <Image  className="absolute right-[0] top-[10%] " src="/el_vec_r.png" alt="vector_left_image" width={500} height={500} />
                 {TeamMembers.map((category, index) => (
-                    <div key={index} className={`${category.category === "Management" ? "bg-contain bg-center bg-no-repeat" : ""}`}
-                        style={
-                            category.category === "Management"
-                                ? { backgroundImage: "url('/el_bg1_crew.png')", filter: "brightness(1)" }
-                                : {}
-                        }>
+                    <div key={index} className="relative z-50" >
                         <h4 className="text-l font-semibold text-center text-white mb-8">
                             {category.category}
                         </h4>
@@ -23,26 +23,23 @@ const CrewTeam = () => {
                                 <div
                                     key={memberIndex} className="w-[200px] flex flex-col items-center hover:scale-105 transition rounded-lg shadow-lg text-xs whitespace-nowrap text-center p-8 mb-2 ">
                                     <div className="w-20 h-32 rounded-lg overflow-hidden" style={{ boxShadow: '6px 5px 5px rgba(255, 0, 0, 0.3)' }}>
-                                        <img
+                                        <Image
                                             src={member.image}
-                                            alt={member.name} className="w-full h-full object-cover" />
+                                            alt={member.name} className="w-full h-full object-cover"  width={150} height={150}/>
                                     </div>
                                     <h3 className="font-medium text-white py-5">{member.name}</h3>
                                     <p className=" text-gray-400 py-5">{member.title}</p>
                                     <a href={member.linkedin} target="_blank" rel="noopener noreferrer">
-                                        <img src="/linkedin_logo.png" alt="LinkedIn" className="w-6 h-6 bg-blue-600 rounded" />
+                                        <img src="/linkedin_logo.png" alt="LinkedIn" className="w-6 h-6 bg-blue-600 rounded " />
                                     </a>
                                 </div>
                             ))}
                         </div>
-
                     </div>
+                    
                 ))}
-                <div
-                    className="h-[250px] bg-contain bg-no-repeat bg-center"
-                    style={{ backgroundImage: "url('/el_bg_2.png')" }}
-                >
                 </div>
+                <Image  className="absolute top-[100%] -translate-y-[100%] right-[50%] translate-x-[50%] z-10 pt-100 " src="/el_vec_b.png" alt="vector_left_image" width={1000} height={1000} />
 
             </div>
 
