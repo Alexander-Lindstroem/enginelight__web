@@ -1,8 +1,8 @@
 export type TeamMember = {
-    name: string,
-    title: string,
-    image : string,
-    linkedin: string
+    name:string,
+    title:string,
+    image:string,
+    linkedin:string
 }
 
 

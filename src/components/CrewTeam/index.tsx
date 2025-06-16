@@ -1,6 +1,4 @@
 import { TeamMembers } from "@/utils/data";
-import { TeamCategory } from "@/utils/types";
-
 import Image from "next/image";
 
 const CrewTeam = () => {
@@ -29,20 +27,17 @@ const CrewTeam = () => {
                                     </div>
                                     <h3 className="font-medium text-white py-5">{member.name}</h3>
                                     <p className=" text-gray-400 py-5">{member.title}</p>
-                                    <a href={member.linkedin} target="_blank" rel="noopener noreferrer">
+                                    <a href={`https://www.linkedin.com/in/${member.linkedin}`} target="_blank" rel="noopener noreferrer">
                                         <img src="/linkedin_logo.png" alt="LinkedIn" className="w-6 h-6 bg-blue-600 rounded " />
                                     </a>
                                 </div>
                             ))}
                         </div>
                     </div>
-                    
                 ))}
                 </div>
                 <Image  className="absolute top-[100%] -translate-y-[100%] right-[50%] translate-x-[50%] z-10 pt-100 " src="/el_vec_b.png" alt="vector_left_image" width={1000} height={1000} />
-
             </div>
-
         </>
     )
 }
