@@ -1,29 +1,18 @@
 "use client";
 
-import Image from "next/image";
-
 export default function TonePage() {
   return (
-    <div className="relative w-full h-screen overflow-hidden">
-      <Image
-        src="/gameplay2.jpg"
-        alt="Tone Background"
-        fill
-        className="object-cover object-center"
-        quality={100}
-        priority
-      />
-      <div className="absolute inset-0 bg-opacity-0 z-10" />
-      <div className="absolute inset-0 z-20 flex items-center justify-end font-elmain px-6 sm:px-10 md:px-20 lg:px-32">
-        <div className="w-full max-w-xl text-left text-[var(--color-elwhite)] space-y-5 tracking-wide lg:pl-32 ml-0 lg:ml-[8vw]">
-          <h2 className="text-elh2 md:text-elh1 lg:text-elh1 font-bold max-[180px]:text-elh4">Tone</h2>
-          <p className="text-elbodys sm:text-elbodym md:text-elbodym lg:text-elbodym leading-8 mb-0 max-[180px]:text-elbodys">
-            The visuals are dark, gritty and moody but the low-poly stylization keeps it lighthearted.
-          </p>
-          <p className="text-elbodys sm:text-elbodym md:text-elbodym lg:text-elbodym leading-8 max-[180px]:text-elbodys">
-            The dialogue, mechanics and events of the game contrasts this darkness with a lot of goofiness and comedy.
-          </p>
-        </div>
+    <div className="min-h-screen bg-[url('/gameplay2.jpg')] bg-cover  bg-[rgba(0,0,0,0.2)] bg-blend-multiply bg-no-repeat flex items-center justify-end p-10 pr-0 lg:pr-60 md:pr-30">
+      <div className=" bg-black/15 p-6 mt-5 ml-2 rounded-lg z-10 max-w-full xs:max-w-[300px]  md:mt-40 md:ml-15 md:max-w-[500px] lg:max-w-[600px] lg:mt-10 lg:ml-10 xl:max-w-[600px]">
+        <h2 className="font-elmain text-elwhite text-3xl mb-4 font-bold">
+          Tone
+        </h2>
+        <p className="font-elmain text-elwhite text-base/8">
+          The visuals are dark, gritty and moody but the low-poly stylization keeps it lighthearted.
+        </p>
+        <p className="font-elmain text-elwhite text-base/8">
+          The dialogue, mechanics and events of the game contrasts this darkness with a lot of goofiness and comedy.
+        </p>
       </div>
     </div>
   );
