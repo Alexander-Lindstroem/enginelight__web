@@ -1,4 +1,4 @@
-import NewsBtn from "../NewsBtn";
+
 
 
 const DescriptionContent = () => {
