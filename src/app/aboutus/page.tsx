@@ -1,8 +1,19 @@
 import CrewIntro from "@/components/CrewIntro"
 
 const AboutUs = () => {
-    return (
-        <div className="w-full">
+  return (
+    <>
+      <CrewIntro />
+    </>
+
+  )
+}
+
+export default AboutUs
+
+/*
+
+ <div className="w-full">
         <section className="relative w-full h-screen bg-fixed bg-center bg-cover bg-no-repeat"
          style={{ backgroundImage: "url('/darkforest.png')" }}
          >
@@ -12,7 +23,4 @@ const AboutUs = () => {
           </div>
         </section>
       </div>
-    )
-}
-
-export default AboutUs
+      */
