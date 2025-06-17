@@ -100,7 +100,7 @@ export const TeamMembers: TeamCategory[] = [
       {
         name: "Zhengyang",
         title: "Programmer",
-        image: "/zhengyang.jpg",
+        image: "/Zhengyang.jpg",
         linkedin: ""
       }
     ]
