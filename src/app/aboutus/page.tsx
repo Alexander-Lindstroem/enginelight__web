@@ -1,7 +1,9 @@
 import CrewIntro from "@/components/CrewIntro"
+import CrewTeam from "@/components/CrewTeam"
 
 const AboutUs = () => {
     return (
+      <>
         <div className="w-full">
         <section className="relative w-full h-screen bg-fixed bg-center bg-cover bg-no-repeat"
          style={{ backgroundImage: "url('/darkforest.png')" }}
@@ -12,6 +14,8 @@ const AboutUs = () => {
           </div>
         </section>
       </div>
+       <CrewTeam />
+       </>
     )
 }
 
