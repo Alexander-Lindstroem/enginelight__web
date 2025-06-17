@@ -17,20 +17,22 @@ const VideoContainer = ({ video_link }: { video_link: string }) => {
   }, [])
 
   return (
-    <div className="relative w-[100%] h-screen">
+    <div className="hidden md:block w-full h-screen bg-black relative">
       <video
         src={video_link}
-        className="absolute top-0 left-0 w-full h-full object-cover"
+        className="absolute w-full h-full"
         autoPlay
         muted={isMuted}
         loop
         playsInline
       />
-      <button
-        onClick={() => toggleMute(setIsMuted)}
-        className="absolute top-20 right-20 bg-white/50 p-2 rounded-xl text-black text-3xl sm:text-7xl" >
-        {isMuted ? <VolumeX size={iconSize} /> : <Volume2 size={iconSize} />}
-      </button>
+      <div className='absolute w-full max-h-full aspect-video top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]' style={{ maxWidth: "calc(100vh / 0.5625)" }}>
+        <button
+          onClick={() => toggleMute(setIsMuted)}
+          className="absolute bottom-0 right-0 -translate-x-[50%] -translate-y-[50%] bg-white/50 p-2 rounded-xl text-black text-3xl sm:text-7xl" >
+          {isMuted ? <VolumeX size={iconSize} /> : <Volume2 size={iconSize} />}
+        </button>
+      </div>
     </div>
   )
 }
