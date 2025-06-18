@@ -6,15 +6,24 @@ import { toggleMute,updateIconSize} from '@/utils/functions'
 
 const VideoContainer = ({ video_link }: { video_link: string }) => {
   const [isMuted, setIsMuted] = useState<boolean>(true)
+  const [mobileSizeCheck, setMobileSizeCheck] = useState<boolean>(window.innerWidth <= 768)
   const [iconSize, setIconSize] = useState<number>(32)
 
   useEffect(() => {
-   
-    const handleResize = () => updateIconSize(setIconSize)
+    const handleResize = () => { 
+      updateIconSize(setIconSize) 
+      setMobileSizeCheck(window.innerWidth <= 768);
+    }
     handleResize()
     window.addEventListener('resize', handleResize)
     return () => window.removeEventListener('resize', handleResize)
   }, [])
+
+  useEffect(() => {
+      if (mobileSizeCheck) {
+        setIsMuted(true)
+      }
+  }, [mobileSizeCheck])
 
   return (
     <div className="hidden md:block w-full h-screen bg-black relative">
