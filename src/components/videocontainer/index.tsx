@@ -6,7 +6,7 @@ import { toggleMute,updateIconSize} from '@/utils/functions'
 
 const VideoContainer = ({ video_link }: { video_link: string }) => {
   const [isMuted, setIsMuted] = useState<boolean>(true)
-  const [mobileSizeCheck, setMobileSizeCheck] = useState<boolean>(window.innerWidth <= 768)
+  const [mobileSizeCheck, setMobileSizeCheck] = useState<boolean>(false)
   const [iconSize, setIconSize] = useState<number>(32)
 
   useEffect(() => {
