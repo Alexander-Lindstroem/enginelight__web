@@ -1,6 +1,12 @@
+import HeroSection from "@/components/HeroSection";
+import DescriptionContent from "@/components/DescriptionContent";
+
 const Home = () => {
   return (
-    <p>Home</p>
+    <>
+      <HeroSection/>
+      <DescriptionContent/>
+    </>
   );
 }
 
