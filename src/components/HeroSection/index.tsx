@@ -20,7 +20,7 @@ const HeroSection = () => {
                 </h1>
                 <p className="text-elbodyl font-medium max-w-[490px]">Discover the Open World of Nosviken, infested with old mechanical war robots, or "Mechs", as the locals call them.</p>
                 <div className="flex flex-col md:flex-row gap-4 justify-center text-white">
-                    <NewsBtn hrefPath="https://www.youtube.com/watch?v=NVqmOqkA6C0" btnTitle="WATCH TRAILER" />
+                    <NewsBtn hrefPath="https://www.youtube.com/watch?v=a5epkhg6s8A" btnTitle="WATCH TRAILER" />
                     <NewsBtn hrefPath="https://futuregames.itch.io/enginelight" btnTitle="VIEW ON ITCH.IO" />
                 </div>
             </div>
