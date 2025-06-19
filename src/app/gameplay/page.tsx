@@ -1,6 +1,3 @@
-import TonePage from "@/components/TonePage"
-import VideoContainer from "@/components/videocontainer";
-import Gameplay_world from "@/components/GamePlay_Snapshot1"
 import Gameplay_world from "@/components/GamePlay_Snapshot1";
 import VideoContainer from "@/components/videocontainer";
 import TonePage from "@/components/TonePage"
