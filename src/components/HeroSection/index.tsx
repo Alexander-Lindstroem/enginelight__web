@@ -34,15 +34,17 @@ const HeroSection = () => {
 
             {showVideo && (
                 <div className="fixed inset-0 bg-black bg-opacity-80 z-50 flex items-center justify-center">
-                    <div className="relative w-[90%] max-w-4xl aspect-video">
-                        <iframe
-                            src="https://www.youtube.com/embed/a5epkhg6s8A?autoplay=1"
-                            className="w-full h-full pointer-events-auto"
-                            title="EngineLight Trailer"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowFullScreen
-                        />
-                        <button onClick={() => setShowVideo(false)} className="absolute top-5 right-1 text-white text-2xl z-50"  aria-label="Close video">
+                    <div className="relative w-[90%] max-w-4xl max-h-[90vh] lg:landscape:max-w-4xl sm:landscape:max-w-sm">
+                        <div className="aspect-video ">
+                            <iframe
+                                src="https://www.youtube.com/embed/a5epkhg6s8A?autoplay=1"
+                                className="w-full h-full pointer-events-auto"
+                                title="EngineLight Trailer"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowFullScreen
+                            />
+                        </div>
+                        <button onClick={() => setShowVideo(false)} className="absolute top-5 right-1 text-white text-2xl z-20" aria-label="Close video">
                             <X />
                         </button>
                     </div>
