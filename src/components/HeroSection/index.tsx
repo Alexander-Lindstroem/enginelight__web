@@ -5,6 +5,8 @@ import NewsBtn from "../NewsBtn"
 import Image from "next/image";
 import { X } from "lucide-react";
 
+
+
 const HeroSection = () => {
     const [showVideo, setShowVideo] = useState(false);
     return (
@@ -25,9 +27,7 @@ const HeroSection = () => {
                 </h1>
                 <p className="text-elbodyl font-medium max-w-[490px]">Discover the Open World of Nosviken, infested with old mechanical war robots, or "Mechs", as the locals call them.</p>
                 <div className="flex flex-col md:flex-row gap-4 justify-center text-white">
-                    <div className="flex justify-center">
-                        <button onClick={() => setShowVideo(true)} className="text-1xl border-white border-1 basis-xs bg-gradient-to-b from-[#75201D] to-[#FFFFFF] hover:opacity-90 transition-colors p-2 px-4"> WATCH TRAILER </button>
-                    </div>
+                    <NewsBtn btnTitle="WATCH TRAILER" onClick={() => setShowVideo(true)} />
                     <NewsBtn hrefPath="https://futuregames.itch.io/enginelight" btnTitle="VIEW ON ITCH.IO" />
                 </div>
             </div>
