@@ -42,7 +42,7 @@ const HeroSection = () => {
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowFullScreen
                         />
-                        <button onClick={() => setShowVideo(false)} className="absolute top-5 right-1 text-white text-2xl z-50" aria-label="Close video">
+                        <button onClick={() => setShowVideo(false)} className="absolute top-5 right-1 text-white text-2xl z-50"  aria-label="Close video">
                             <X />
                         </button>
                     </div>
