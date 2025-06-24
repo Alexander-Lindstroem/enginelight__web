@@ -1,7 +1,14 @@
+'use client';
+
+import { useState } from "react";
 import NewsBtn from "../NewsBtn"
-import Image from "next/image"
+import Image from "next/image";
+import { X } from "lucide-react";
+
+
 
 const HeroSection = () => {
+    const [showVideo, setShowVideo] = useState(false);
     return (
         <div className="h-full bg-elblack relative font-elmain">
             <div className="absolute h-full w-full bg-[url(/hero-section-bg.jpg)] bg-center bg-cover bg-no-repeat blur-sm"></div>
@@ -20,10 +27,27 @@ const HeroSection = () => {
                 </h1>
                 <p className="text-elbodyl font-medium max-w-[490px]">Discover the Open World of Nosviken, infested with old mechanical war robots, or "Mechs", as the locals call them.</p>
                 <div className="flex flex-col md:flex-row gap-4 justify-center text-white">
-                    <NewsBtn hrefPath="https://www.youtube.com/watch?v=a5epkhg6s8A" btnTitle="WATCH TRAILER" />
+                    <NewsBtn btnTitle="WATCH TRAILER" onClick={() => setShowVideo(true)} />
                     <NewsBtn hrefPath="https://futuregames.itch.io/enginelight" btnTitle="VIEW ON ITCH.IO" />
                 </div>
             </div>
+
+            {showVideo && (
+                <div className="fixed inset-0 bg-black bg-opacity-80 z-50 flex items-center justify-center">
+                    <div className="relative w-[90%] max-w-4xl aspect-video">
+                        <iframe
+                            src="https://www.youtube.com/embed/a5epkhg6s8A?autoplay=1"
+                            className="w-full h-full pointer-events-auto"
+                            title="EngineLight Trailer"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                        />
+                        <button onClick={() => setShowVideo(false)} className="absolute top-5 right-1 text-white text-2xl z-50"  aria-label="Close video">
+                            <X />
+                        </button>
+                    </div>
+                </div>
+            )}
         </div>
     )
 }
